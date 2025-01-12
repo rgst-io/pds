@@ -2,7 +2,7 @@ ARG NODE_VERSION=unset
 FROM node:${NODE_VERSION}-alpine3.20 AS build
 WORKDIR /app
 COPY ./service ./
-RUN corepack enable && corepack use pnpm
+RUN corepack enable && corepack install
 RUN pnpm install --production --frozen-lockfile
 
 # Uses assets from build stage to reduce build size
