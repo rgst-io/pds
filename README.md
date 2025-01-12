@@ -1,7 +1,7 @@
 # PDS
 
 **This is NOT the official Bluesky PDS, for that see
-[bluesky/pds](https://github.com/bluesky/pds)**
+[bluesky-social/pds](https://github.com/bluesky-social/pds)**
 
 This repository contains a flavor of the Bluesky PDS. As of this writing
 it's largely just more up-to-date than the official. Latest versions of
@@ -9,7 +9,7 @@ the reference (`@atproto/pds`) are used over hand-picked versions.
 
 ## Usage
 
-Follow the [official PDS documentation](https://github.com/bluesky/pds),
+Follow the [official PDS documentation](https://github.com/bluesky-social/pds),
 using the installer and resources provided in this repository instead.
 
 ### Switching from bluesky/pds
