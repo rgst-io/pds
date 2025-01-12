@@ -50,7 +50,7 @@ docker pull ghcr.io/rgst-io/pds:VERSION
 # --deny-self-hosted-runners is optional, but proves that I didn't run
 # my own runners to create this image and somehow 'taint' the process.
 gh attestation verify oci://ghcr.io/rgst-io/pds \
-  --owner jaredallard --deny-self-hosted-runners
+  --owner rgst-io --deny-self-hosted-runners
 ```
 
 ## License
