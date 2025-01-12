@@ -29,6 +29,9 @@ jobs:
       - uses: jdx/mise-action@v2
         env:
           GH_TOKEN: ${{ github.token }}
+      - name: Get Node version from mise
+        id: node
+        run: echo "version=$(mise current node)" >> $GITHUB_OUTPUT
 
       - name: Setup Docker buildx
         uses: docker/setup-buildx-action@v3
@@ -57,6 +60,8 @@ jobs:
         with:
           context: .
           push: ${{ github.event_name != 'pull_request' }}
+          sbom: true
+          build-args: NODE_VERSION=${{ steps.node.outputs.version }}
           platforms: linux/amd64,linux/arm64
           tags: |
             ${{ steps.meta.outputs.tags }}
