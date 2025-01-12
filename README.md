@@ -135,13 +135,13 @@ These should all return your server's public IP.
 On your server via ssh, download the installer script using wget:
 
 ```bash
-wget https://raw.githubusercontent.com/bluesky-social/pds/main/installer.sh
+wget https://raw.githubusercontent.com/rgst-io/pds/main/installer.sh
 ```
 
 or download it using curl:
 
 ```bash
-curl https://raw.githubusercontent.com/bluesky-social/pds/main/installer.sh >installer.sh
+curl https://raw.githubusercontent.com/rgst-io/pds/main/installer.sh >installer.sh
 ```
 
 And then run the installer using bash:
@@ -209,7 +209,7 @@ One way to do this is to use an email service. [Resend](https://resend.com/) and
 
 Create an account and API key on an email service, ensure your server allows access on the required ports, and set these variables in `/pds/pds.env` (example with Resend):
 
-```
+```bash
 PDS_EMAIL_SMTP_URL=smtps://resend:<your api key here>@smtp.resend.com:465/
 PDS_EMAIL_FROM_ADDRESS=admin@your.domain
 ```
@@ -228,7 +228,7 @@ sudo pdsadmin update
 
 This project is dual-licensed under MIT and Apache 2.0 terms:
 
-- MIT license ([LICENSE-MIT.txt](https://github.com/bluesky-social/pds/blob/main/LICENSE-MIT.txt) or http://opensource.org/licenses/MIT)
-- Apache License, Version 2.0, ([LICENSE-APACHE.txt](https://github.com/bluesky-social/pds/blob/main/LICENSE-APACHE.txt) or http://www.apache.org/licenses/LICENSE-2.0)
+- MIT license ([LICENSE-MIT.txt](http://opensource.org/licenses/MIT)
+- Apache License, Version 2.0, ([LICENSE-APACHE.txt](http://www.apache.org/licenses/LICENSE-2.0)
 
 Downstream projects and end users may choose either license individually, or both together, at their discretion. The motivation for this dual-licensing is the additional software patent assurance provided by Apache 2.0.
