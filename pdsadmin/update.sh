@@ -23,9 +23,15 @@ fi
 
 echo "* Updating PDS"
 mv "${COMPOSE_TEMP_FILE}" "${COMPOSE_FILE}"
-pushd "$PDS_DATADIR" >/dev/null || exit 1
+pushd "$PDS_DATADIR" >/dev/null
 docker compose pull
-popd >/dev/null || exit 1
+
+if gh auth status &>/dev/null; then
+  echo "* Verifying image attestation"
+  gh attestation verify oci://ghcr.io/rgst-io/pds \
+    --owner rgst-io --deny-self-hosted-runners
+fi
+popd >/dev/null
 
 echo "* Restarting PDS"
 systemctl restart pds
