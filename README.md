@@ -14,13 +14,23 @@ using the installer and resources provided in this repository instead.
 
 ### Switching from bluesky/pds
 
-TODO
+Run the following:
+
+```bash
+sudo wget -O "$(command -v pdsadmin)" https://raw.githubusercontent.com/rgst-io/pds/refs/heads/main/pdsadmin.sh && \
+  sudo chmod +x "$(command -v pdsadmin)" && \
+  sudo pdsadmin update
+```
 
 ### Switching the Installer Back
 
-To switch back to the official installer, simply replace the `pdsadmin`
-script on your machine to be the official one and run `sudo pdsadmin
-update`.
+Run the following:
+
+```bash
+sudo wget -O "$(command -v pdsadmin)" https://raw.githubusercontent.com/bluesky-social/pds/refs/heads/main/pdsadmin.sh && \
+  sudo chmod +x "$(command -v pdsadmin)" && \
+  sudo pdsadmin update
+```
 
 ## Supply Chain Security
 
