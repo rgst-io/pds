@@ -1,14 +1,9 @@
 #!/usr/bin/env bash
-set -o errexit
-set -o nounset
-set -o pipefail
+set -euo pipefail
 
 PDS_DATADIR="/pds"
 COMPOSE_FILE="${PDS_DATADIR}/compose.yaml"
 COMPOSE_URL="https://raw.githubusercontent.com/rgst-io/pds/main/compose.yaml"
-
-# TODO: allow the user to specify a version to update to.
-TARGET_VERSION="${1:-}"
 
 COMPOSE_TEMP_FILE="${COMPOSE_FILE}.tmp"
 
@@ -28,6 +23,9 @@ fi
 
 echo "* Updating PDS"
 mv "${COMPOSE_TEMP_FILE}" "${COMPOSE_FILE}"
+pushd "$PDS_DATADIR" >/dev/null || exit 1
+docker compose pull
+popd >/dev/null || exit 1
 
 echo "* Restarting PDS"
 systemctl restart pds
