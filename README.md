@@ -22,6 +22,27 @@ To switch back to the official installer, simply replace the `pdsadmin`
 script on your machine to be the official one and run `sudo pdsadmin
 update`.
 
+## Supply Chain Security
+
+While not perfect, attestations is used in this project to ensure that
+only Github Artifacts built the provided artifacts
+(ghcr.io/rgst-io/pds).
+
+### How do I verify the Docker image?
+
+You can use the [Github CLI] to easily verify that it was created
+through a Github action at a given commit. For example, to verify the
+latest built image:
+
+```bash
+docker pull ghcr.io/rgst-io/pds:VERSION
+
+# --deny-self-hosted-runners is optional, but proves that I didn't run
+# my own runners to create this image and somehow 'taint' the process.
+gh attestation verify oci://ghcr.io/rgst-io/pds \
+  --owner jaredallard --deny-self-hosted-runners
+```
+
 ## License
 
 This project is dual-licensed under MIT and Apache 2.0 terms:
@@ -33,3 +54,5 @@ Downstream projects and end users may choose either license
 individually, or both together, at their discretion. The motivation for
 this dual-licensing is the additional software patent assurance provided
 by Apache 2.0.
+
+[Github CLI]: https://cli.github.com/
