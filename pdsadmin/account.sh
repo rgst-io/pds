@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 set -o errexit
 set -o nounset
 set -o pipefail
@@ -28,14 +28,16 @@ SUBCOMMAND="${1:-}"
 # account list
 #
 if [[ "${SUBCOMMAND}" == "list" ]]; then
-  DIDS="$(curl_cmd_get \
-    "https://${PDS_HOSTNAME}/xrpc/com.atproto.sync.listRepos?limit=100" | jq --raw-output '.repos[].did'
+  DIDS="$(
+    curl_cmd_get \
+      "https://${PDS_HOSTNAME}/xrpc/com.atproto.sync.listRepos?limit=100" | jq --raw-output '.repos[].did'
   )"
   OUTPUT='[{"handle":"Handle","email":"Email","did":"DID"}'
   for did in ${DIDS}; do
-    ITEM="$(curl_cmd_get \
-      --user "admin:${PDS_ADMIN_PASSWORD}" \
-      "https://${PDS_HOSTNAME}/xrpc/com.atproto.admin.getAccountInfo?did=${did}"
+    ITEM="$(
+      curl_cmd_get \
+        --user "admin:${PDS_ADMIN_PASSWORD}" \
+        "https://${PDS_HOSTNAME}/xrpc/com.atproto.admin.getAccountInfo?did=${did}"
     )"
     OUTPUT="${OUTPUT},${ITEM}"
   done
@@ -63,14 +65,16 @@ elif [[ "${SUBCOMMAND}" == "create" ]]; then
   fi
 
   PASSWORD="$(openssl rand -base64 30 | tr -d "=+/" | cut -c1-24)"
-  INVITE_CODE="$(curl_cmd_post \
-    --user "admin:${PDS_ADMIN_PASSWORD}" \
-    --data '{"useCount": 1}' \
-    "https://${PDS_HOSTNAME}/xrpc/com.atproto.server.createInviteCode" | jq --raw-output '.code'
+  INVITE_CODE="$(
+    curl_cmd_post \
+      --user "admin:${PDS_ADMIN_PASSWORD}" \
+      --data '{"useCount": 1}' \
+      "https://${PDS_HOSTNAME}/xrpc/com.atproto.server.createInviteCode" | jq --raw-output '.code'
   )"
-  RESULT="$(curl_cmd_post_nofail \
-    --data "{\"email\":\"${EMAIL}\", \"handle\":\"${HANDLE}\", \"password\":\"${PASSWORD}\", \"inviteCode\":\"${INVITE_CODE}\"}" \
-    "https://${PDS_HOSTNAME}/xrpc/com.atproto.server.createAccount"
+  RESULT="$(
+    curl_cmd_post_nofail \
+      --data "{\"email\":\"${EMAIL}\", \"handle\":\"${HANDLE}\", \"password\":\"${PASSWORD}\", \"inviteCode\":\"${INVITE_CODE}\"}" \
+      "https://${PDS_HOSTNAME}/xrpc/com.atproto.server.createAccount"
   )"
 
   DID="$(echo $RESULT | jq --raw-output '.did')"
@@ -141,7 +145,8 @@ elif [[ "${SUBCOMMAND}" == "takedown" ]]; then
     exit 1
   fi
 
-  PAYLOAD="$(cat <<EOF
+  PAYLOAD="$(
+    cat <<EOF
     {
       "subject": {
         "\$type": "com.atproto.admin.defs#repoRef",
@@ -153,7 +158,7 @@ elif [[ "${SUBCOMMAND}" == "takedown" ]]; then
       }
     }
 EOF
-)"
+  )"
 
   curl_cmd_post \
     --user "admin:${PDS_ADMIN_PASSWORD}" \
@@ -180,7 +185,8 @@ elif [[ "${SUBCOMMAND}" == "untakedown" ]]; then
     exit 1
   fi
 
-  PAYLOAD=$(cat <<EOF
+  PAYLOAD=$(
+    cat <<EOF
   {
     "subject": {
       "\$type": "com.atproto.admin.defs#repoRef",
@@ -191,7 +197,7 @@ elif [[ "${SUBCOMMAND}" == "untakedown" ]]; then
     }
   }
 EOF
-)
+  )
 
   curl_cmd_post \
     --user "admin:${PDS_ADMIN_PASSWORD}" \

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 set -o errexit
 set -o nounset
 set -o pipefail
@@ -42,10 +42,10 @@ REQUIRED_DOCKER_PACKAGES="
 
 PUBLIC_IP=""
 METADATA_URLS=()
-METADATA_URLS+=("http://169.254.169.254/v1/interfaces/0/ipv4/address") # Vultr
+METADATA_URLS+=("http://169.254.169.254/v1/interfaces/0/ipv4/address")                 # Vultr
 METADATA_URLS+=("http://169.254.169.254/metadata/v1/interfaces/public/0/ipv4/address") # DigitalOcean
-METADATA_URLS+=("http://169.254.169.254/2021-03-23/meta-data/public-ipv4") # AWS
-METADATA_URLS+=("http://169.254.169.254/hetzner/v1/metadata/public-ipv4") # Hetzner
+METADATA_URLS+=("http://169.254.169.254/2021-03-23/meta-data/public-ipv4")             # AWS
+METADATA_URLS+=("http://169.254.169.254/hetzner/v1/metadata/public-ipv4")              # Hetzner
 
 PDS_DATADIR="${1:-/pds}"
 PDS_HOSTNAME="${2:-}"
@@ -134,7 +134,7 @@ function main {
     echo "  sudo rm -rf ${PDS_DATADIR}"
     echo
     echo "3. Re-run this installation script"
-      echo
+    echo
     echo "  sudo bash ${0}"
     echo
     echo "For assistance, check https://github.com/bluesky-social/pds"
@@ -234,7 +234,7 @@ INSTALLER_MESSAGE
   if lsof -v >/dev/null 2>&1; then
     while true; do
       apt_process_count="$(lsof -n -t /var/cache/apt/archives/lock /var/lib/apt/lists/lock /var/lib/dpkg/lock | wc --lines || true)"
-      if (( apt_process_count == 0 )); then
+      if ((apt_process_count == 0)); then
         break
       fi
       echo "* Waiting for other apt process to complete..."
@@ -255,7 +255,7 @@ INSTALLER_MESSAGE
     # Remove the existing file, if it exists,
     # so there's no prompt on a second run.
     rm --force /etc/apt/keyrings/docker.gpg
-    curl --fail --silent --show-error --location "https://download.docker.com/linux/${DISTRIB_ID}/gpg" | \
+    curl --fail --silent --show-error --location "https://download.docker.com/linux/${DISTRIB_ID}/gpg" |
       gpg --dearmor --output /etc/apt/keyrings/docker.gpg
 
     echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/${DISTRIB_ID} ${DISTRIB_CODENAME} stable" >/etc/apt/sources.list.d/docker.list
