@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@atproto/pds':
-        specifier: 0.4.89
-        version: 0.4.89
+        specifier: 0.4.90
+        version: 0.4.90
 
 packages:
 
@@ -32,8 +32,8 @@ packages:
   '@atproto-labs/xrpc-utils@0.0.4':
     resolution: {integrity: sha512-c08pKD9AVGaGcje/ueTmRxntTbm9tdNOi3MaoVGzIqklci2vMk1+DM8eiKxjuO7LjDINEyGXaAUCu3gYAUrgWg==}
 
-  '@atproto/api@0.13.30':
-    resolution: {integrity: sha512-U+3XUACcCuoEvszh48vnzZITr1D7xZ8yz3EqjadYtV+zb3KjBmGroa50eaSRqHyeaDUZF38knumHPyUe9tTuqg==}
+  '@atproto/api@0.13.31':
+    resolution: {integrity: sha512-i2cUQuwe+3j8rgPJj4YWRjSQeJunGqJ3IzesnvbODjjZh3IS9jB80BZ/pTe/AvNg6JCBbqeWJjWDVKeFHaiZAw==}
 
   '@atproto/aws@0.2.12':
     resolution: {integrity: sha512-1k/esylJJTL0tNJ9LOz6UQaAYwLay8Ulff7sZLJ+Pi5+pq7h5x0ZqWaaIZgNhlkXfpGXIBZ4JS9XRU9XvygDyg==}
@@ -65,14 +65,14 @@ packages:
   '@atproto/lexicon@0.4.5':
     resolution: {integrity: sha512-fljWqMGKn+XWtTprBcS3F1hGBREnQYh6qYHv2sjENucc7REms1gtmZXSerB9N6pVeHVNOnXiILdukeAcic5OEw==}
 
-  '@atproto/oauth-provider@0.2.14':
-    resolution: {integrity: sha512-T5VNRY/kfzGkxSgpEcOX+A1wNtTbRfkn0Qybd0RIVlsLVvT6CX9mSc42KGxNh/KkxMhHHy+XICpT9g3mLchTpw==}
+  '@atproto/oauth-provider@0.2.15':
+    resolution: {integrity: sha512-dCLZeA8+L7742adNHFMXXdXL0lQDwhFHrIX0CAuvaB72RNRpQxEA69HPNYy7u3F/VEwlN2+R0xOHvcbyJhddRw==}
 
   '@atproto/oauth-types@0.2.2':
     resolution: {integrity: sha512-UMTfJwKD/mIZEXxVT02XWYMtRJAu4iytxhlScH48Q/40nOa6oV4wUFij0gnV4NAQkjHMaYh39ChRMjjKHeypJA==}
 
-  '@atproto/pds@0.4.89':
-    resolution: {integrity: sha512-YRT2CaWZKh/AiNpmVKys8D2Pkd8Gl3JnhSkF2h9gXoNHov4LbytOXpUxdgD0BeRcsGwIG7cit7SmPzO2iywZ8w==}
+  '@atproto/pds@0.4.90':
+    resolution: {integrity: sha512-Au4v44l+jQV8/f5o9gWiwpBOZGVCcyMpbQHpVk5AdpF/4fhE/6XqviyDyKBRFdekGRRrUevtM1cDwIewv+x6rA==}
     hasBin: true
 
   '@atproto/repo@0.6.2':
@@ -1697,7 +1697,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@atproto/api@0.13.30':
+  '@atproto/api@0.13.31':
     dependencies:
       '@atproto/common-web': 0.3.2
       '@atproto/lexicon': 0.4.5
@@ -1784,7 +1784,7 @@ snapshots:
       multiformats: 9.9.0
       zod: 3.24.1
 
-  '@atproto/oauth-provider@0.2.14':
+  '@atproto/oauth-provider@0.2.15':
     dependencies:
       '@atproto-labs/fetch': 0.2.0
       '@atproto-labs/fetch-node': 0.1.6
@@ -1813,17 +1813,17 @@ snapshots:
       '@atproto/jwk': 0.1.2
       zod: 3.24.1
 
-  '@atproto/pds@0.4.89':
+  '@atproto/pds@0.4.90':
     dependencies:
       '@atproto-labs/fetch-node': 0.1.6
       '@atproto-labs/xrpc-utils': 0.0.4
-      '@atproto/api': 0.13.30
+      '@atproto/api': 0.13.31
       '@atproto/aws': 0.2.12
       '@atproto/common': 0.4.6
       '@atproto/crypto': 0.4.3
       '@atproto/identity': 0.4.5
       '@atproto/lexicon': 0.4.5
-      '@atproto/oauth-provider': 0.2.14
+      '@atproto/oauth-provider': 0.2.15
       '@atproto/repo': 0.6.2
       '@atproto/syntax': 0.3.1
       '@atproto/xrpc': 0.6.6
