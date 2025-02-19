@@ -34,8 +34,8 @@ sudo wget -O "$(command -v pdsadmin)" https://raw.githubusercontent.com/bluesky-
 
 ## Supply Chain Security
 
-While not perfect, attestations is used in this project to ensure that
-only Github Artifacts built the provided artifacts
+While not perfect, attestations are used in this project to ensure that
+only Github Actions built the provided artifacts
 (ghcr.io/rgst-io/pds).
 
 ### How do I verify the Docker image?
@@ -57,8 +57,8 @@ gh attestation verify oci://ghcr.io/rgst-io/pds \
 
 This project is dual-licensed under MIT and Apache 2.0 terms:
 
-- MIT license ([LICENSE-MIT.txt](./LICENSE-MIT.txt)
-- Apache License, Version 2.0, ([LICENSE-APACHE.txt](./LICENSE-APACHE.txt)
+- MIT license ([LICENSE-MIT.txt](./LICENSE-MIT.txt))
+- Apache License, Version 2.0, ([LICENSE-APACHE.txt](./LICENSE-APACHE.txt))
 
 Downstream projects and end users may choose either license
 individually, or both together, at their discretion. The motivation for
