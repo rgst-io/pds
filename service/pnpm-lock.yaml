@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@atproto/pds':
-        specifier: 0.4.100
-        version: 0.4.100
+        specifier: 0.4.104
+        version: 0.4.104
 
 packages:
 
@@ -33,11 +33,11 @@ packages:
   '@atproto-labs/xrpc-utils@0.0.7':
     resolution: {integrity: sha512-mNev88mtNo79h4bkEQYuLoTlejc1zMl9lLwKbpKYfFaaU0IS9VdhiPdRTEcQ6JGYK915OZ5Lv7OJQNF0g9qq9w==}
 
-  '@atproto/api@0.14.4':
-    resolution: {integrity: sha512-R/9xmAs8noZK//wmCoHow99Eg1g5J9y36IYmrU3aRApa0JkSVOfoCwwY42gN+LXDGSY1hP50hyRe8ftUVUMFkA==}
+  '@atproto/api@0.14.7':
+    resolution: {integrity: sha512-YG2kvAtsgtajLlLrorYuHcxGgepG0c/RUB2/iJyBnwKjGqDLG8joOETf38JSNiGzs6NJbNKa9NHG6BQKourxBA==}
 
-  '@atproto/aws@0.2.15':
-    resolution: {integrity: sha512-4fR7wEnlGtkchfL7XdQ61yALNbIMpX1xL4H0XEq+o3LzM7/08lw2vhQCDFCqqjOJwWXxefQRsVXG5p7iyy3HPA==}
+  '@atproto/aws@0.2.16':
+    resolution: {integrity: sha512-NXWEBybqiVErKGbcKLrevFaUTMCazb6XtM/HX7EYgyQdtyl4MwzGr93aZcwoSkOFBhJr3t7sNQHC3Tpyh5l+hg==}
     engines: {node: '>=18.7.0'}
 
   '@atproto/common-web@0.4.0':
@@ -70,20 +70,20 @@ packages:
   '@atproto/lexicon@0.4.7':
     resolution: {integrity: sha512-/x6h3tAiDNzSi4eXtC8ke65B7UzsagtlGRHmUD95698x5lBRpDnpizj0fZWTZVYed5qnOmz/ZEue+v3wDmO61g==}
 
-  '@atproto/oauth-provider@0.3.1':
-    resolution: {integrity: sha512-xd/rTLPv3ty7vxP6Amc5DqPRwLNi7UOGW6Bsw/oQ6VugGVRNmv58GsfajKl3W+5iib2YvgCkWS4LlUoiavr6gA==}
+  '@atproto/oauth-provider@0.4.0':
+    resolution: {integrity: sha512-epY+4BXNyK7DBpMfCigD0580xNWYqRr6rpb7m3q0Oa5+L9AoJvcWZfUHXw6J7PIlk6jmj/aeDFjE89p+SivyFw==}
     engines: {node: '>=18.7.0'}
 
   '@atproto/oauth-types@0.2.3':
     resolution: {integrity: sha512-M+0WW/alS2BfhKtwvdU3rSaLoycw6kTH1kGKeyDdmb/xN/8QjU7T6dkJe+wX4NC7F23xdKfti9DZhBpEtn+/kg==}
 
-  '@atproto/pds@0.4.100':
-    resolution: {integrity: sha512-kuqseNDZ0aiGY8JDw7oki1bWRYgT9xWYwV55gJCh4qRfROaE6/dFA1QXhLdM9aMtDGvDfw73wivK9jlAXeMC8A==}
+  '@atproto/pds@0.4.104':
+    resolution: {integrity: sha512-sOInZB/RphJXYdghVaSQKkorAH+u6b+AfK57bPimhkcUa1kDnPasyC2HuuFm6wXQfifkQrxIMg45MnuZbbg5SA==}
     engines: {node: '>=18.7.0'}
     hasBin: true
 
-  '@atproto/repo@0.6.5':
-    resolution: {integrity: sha512-Sa95LaEMDtwL9M0kp3vuVQIcgEJI+6EssDLIiuPnJAi9SbEPESdUfEiIR5t2oFCkMwrS7OJQCLdCa7CMy+plUg==}
+  '@atproto/repo@0.7.0':
+    resolution: {integrity: sha512-n0xyMsKuCxRyP7wROg1wX8vUEnt+H0umIyFUlMTz6jb8XPYk88p5XTcTmLV3dNNu0f71JPd2Jzt6/EGub9zxMg==}
     engines: {node: '>=18.7.0'}
 
   '@atproto/syntax@0.3.3':
@@ -1698,7 +1698,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@atproto/api@0.14.4':
+  '@atproto/api@0.14.7':
     dependencies:
       '@atproto/common-web': 0.4.0
       '@atproto/lexicon': 0.4.7
@@ -1709,11 +1709,11 @@ snapshots:
       tlds: 1.255.0
       zod: 3.24.1
 
-  '@atproto/aws@0.2.15':
+  '@atproto/aws@0.2.16':
     dependencies:
       '@atproto/common': 0.4.8
       '@atproto/crypto': 0.4.4
-      '@atproto/repo': 0.6.5
+      '@atproto/repo': 0.7.0
       '@aws-sdk/client-cloudfront': 3.726.1
       '@aws-sdk/client-kms': 3.726.1
       '@aws-sdk/client-s3': 3.726.1
@@ -1785,7 +1785,7 @@ snapshots:
       multiformats: 9.9.0
       zod: 3.24.1
 
-  '@atproto/oauth-provider@0.3.1':
+  '@atproto/oauth-provider@0.4.0':
     dependencies:
       '@atproto-labs/fetch': 0.2.1
       '@atproto-labs/fetch-node': 0.1.7
@@ -1800,6 +1800,7 @@ snapshots:
       '@hapi/bourne': 3.0.0
       '@hapi/content': 6.0.0
       cookie: 0.6.0
+      forwarded: 0.2.0
       http-errors: 2.0.0
       ioredis: 5.4.2
       jose: 5.9.6
@@ -1813,18 +1814,18 @@ snapshots:
       '@atproto/jwk': 0.1.3
       zod: 3.24.1
 
-  '@atproto/pds@0.4.100':
+  '@atproto/pds@0.4.104':
     dependencies:
       '@atproto-labs/fetch-node': 0.1.7
       '@atproto-labs/xrpc-utils': 0.0.7
-      '@atproto/api': 0.14.4
-      '@atproto/aws': 0.2.15
+      '@atproto/api': 0.14.7
+      '@atproto/aws': 0.2.16
       '@atproto/common': 0.4.8
       '@atproto/crypto': 0.4.4
       '@atproto/identity': 0.4.6
       '@atproto/lexicon': 0.4.7
-      '@atproto/oauth-provider': 0.3.1
-      '@atproto/repo': 0.6.5
+      '@atproto/oauth-provider': 0.4.0
+      '@atproto/repo': 0.7.0
       '@atproto/syntax': 0.3.3
       '@atproto/xrpc': 0.6.9
       '@atproto/xrpc-server': 0.7.11
@@ -1863,7 +1864,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@atproto/repo@0.6.5':
+  '@atproto/repo@0.7.0':
     dependencies:
       '@atproto/common': 0.4.8
       '@atproto/common-web': 0.4.0
