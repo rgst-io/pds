@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@atproto/pds':
-        specifier: 0.4.114
-        version: 0.4.114
+        specifier: 0.4.115
+        version: 0.4.115
 
 packages:
 
@@ -77,15 +77,15 @@ packages:
     resolution: {integrity: sha512-6vo+rX4mccFA/iVD0oDoh2ZDiWKWTs4outDpQFa+WexGfg2ULj2pwBmR9Vfs9CGedjCttKofrsepAo0Dt8Cchg==}
     engines: {node: '>=18.7.0'}
 
-  '@atproto/oauth-provider@0.6.2':
-    resolution: {integrity: sha512-vwA6THau+T7ohP40tp7tW4YJgXmsSnm7iv1Y9izK5nUU5tGdjj3Eb5YXRUCzZsMYad8xW6WBmE1ZlKImCXDHUg==}
+  '@atproto/oauth-provider@0.6.3':
+    resolution: {integrity: sha512-+FI+fvocrwB22E5XBWB5xdCTW2MyXoKuxGn+NZYzIAadG+nhD3P8IEhzHMJyLcr+lFZpCp+9tzx1Nb79ql6Kbw==}
     engines: {node: '>=18.7.0'}
 
   '@atproto/oauth-types@0.2.4':
     resolution: {integrity: sha512-V2LnlXi1CSmBQWTQgDm8l4oN7xYxlftVwM7hrvYNP+Jxo3Ozfe0QLK1Wy/CH6/ZqzrBBhYvcbf4DJYTUwPA+hw==}
 
-  '@atproto/pds@0.4.114':
-    resolution: {integrity: sha512-Opny2AyoTxUVAcC/99Qrc42zf/dFNyZRcfUV6fEt2p16P/XLY+z2JGPvixxqGqPYmGxPDGLoI989jUcZTwZXuw==}
+  '@atproto/pds@0.4.115':
+    resolution: {integrity: sha512-R8EUQ+JG5PCiOJgjK6ifgVO0n8uDJ6maM9We7rAHZaAekzJ0lpQoDF8ltUBnHZyqq4GF1UgJUKtWLDqGsO3b5w==}
     engines: {node: '>=18.7.0'}
     hasBin: true
 
@@ -1796,7 +1796,7 @@ snapshots:
 
   '@atproto/oauth-provider-ui@0.0.2': {}
 
-  '@atproto/oauth-provider@0.6.2':
+  '@atproto/oauth-provider@0.6.3':
     dependencies:
       '@atproto-labs/fetch': 0.2.2
       '@atproto-labs/fetch-node': 0.1.8
@@ -1830,7 +1830,7 @@ snapshots:
       '@atproto/jwk': 0.1.4
       zod: 3.24.1
 
-  '@atproto/pds@0.4.114':
+  '@atproto/pds@0.4.115':
     dependencies:
       '@atproto-labs/fetch-node': 0.1.8
       '@atproto-labs/xrpc-utils': 0.0.9
@@ -1840,7 +1840,7 @@ snapshots:
       '@atproto/crypto': 0.4.4
       '@atproto/identity': 0.4.6
       '@atproto/lexicon': 0.4.9
-      '@atproto/oauth-provider': 0.6.2
+      '@atproto/oauth-provider': 0.6.3
       '@atproto/repo': 0.7.2
       '@atproto/syntax': 0.4.0
       '@atproto/xrpc': 0.6.11
