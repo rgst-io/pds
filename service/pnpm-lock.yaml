@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@atproto/pds':
-        specifier: 0.4.123
-        version: 0.4.123
+        specifier: 0.4.124
+        version: 0.4.124(rollup@4.40.0)
 
 packages:
 
@@ -23,6 +23,12 @@ packages:
 
   '@atproto-labs/pipe@0.1.0':
     resolution: {integrity: sha512-ghOqHFyJlQVFPESzlVHjKroP0tPzbmG5Jms0dNI9yLDEfL8xp4OFPWLX4f6T8mRq69wWs4nIDM3sSsFbFqLa1w==}
+
+  '@atproto-labs/rollup-plugin-bundle-manifest@0.2.0':
+    resolution: {integrity: sha512-9FWOByp+bo3CCqynvovi4yIQ0/LgZ2+V4piaopRrx6RS3azqO6xNAR82wuVir0eVIZdRkkIljgZl9gwdaCiOlA==}
+    engines: {node: '>=18.7.0'}
+    peerDependencies:
+      rollup: ^4.0.0
 
   '@atproto-labs/simple-store-memory@0.1.2':
     resolution: {integrity: sha512-q6wawjKKXuhUzr2MnkSlgr6zU6VimYkL8eNvLQvkroLnIDyMkoCKO4+EJ885ZD8lGwBo4pX9Lhrg9JJ+ncJI8g==}
@@ -61,31 +67,35 @@ packages:
     resolution: {integrity: sha512-A61OT9yc74dEFi1elODt/tzQNSwV3ZGZCY5cRl6NYO9t/0AVdaD+fyt81yh3mRxyI8HeVOecvXl3cPX5knz9rQ==}
     engines: {node: '>=18.7.0'}
 
-  '@atproto/jwk-jose@0.1.5':
-    resolution: {integrity: sha512-piYZ3ohKhRiGlD6/bZCV/Ed3lIi7CVd6txbofEHik22EkYWK0nWKoEriCUSTssSylwFzeOq2r31Ut16WcJoghw==}
+  '@atproto/jwk-jose@0.1.6':
+    resolution: {integrity: sha512-r4DGMvvmazy6CxqAcnplpUxvp6Vd8UwKxQBZRpmm1aNsVonf5qj1yeDkECTiwoe/FPbvtdamlzClB3UZc7Yb5w==}
 
-  '@atproto/jwk@0.1.4':
-    resolution: {integrity: sha512-dSRuEi0FbxL5ln6hEFHp5ZW01xbQH9yJi5odZaEYpcA6beZHf/bawlU12CQy/CDsbC3FxSqrBw7Q2t7mvdSBqw==}
+  '@atproto/jwk@0.1.5':
+    resolution: {integrity: sha512-OzZFLhX41TOcMeanP3aZlL5bLeaUIZT15MI4aU5cwflNq/rwpGOpz3uwDjZc8ytgUjuTQ8LabSz5jMmwoTSWFg==}
 
   '@atproto/lexicon@0.4.10':
     resolution: {integrity: sha512-uDbP20vetBgtXPuxoyRcvOGBt2gNe1dFc9yYKcb6jWmXfseHiGTnIlORJOLBXIT2Pz15Eap4fLxAu6zFAykD5A==}
 
-  '@atproto/oauth-provider-api@0.0.1':
-    resolution: {integrity: sha512-I4NABGdcyVbAukAq/KwEP20f0eQDb/3DjKsRFGeToKJ7QYP95ZwxMUL0ULtKytbAvIi5D9B4FMsWFIuS3DA9/w==}
+  '@atproto/oauth-provider-api@0.1.0':
+    resolution: {integrity: sha512-C7rZYuuIjc61boqV0zA/xghYw3I2PPzOSzxlmnUWpmqmKg+vNBgyTT5XyUeIscZ/fU9wKbArR5rmtAF4h8YKlw==}
 
-  '@atproto/oauth-provider-ui@0.0.2':
-    resolution: {integrity: sha512-6vo+rX4mccFA/iVD0oDoh2ZDiWKWTs4outDpQFa+WexGfg2ULj2pwBmR9Vfs9CGedjCttKofrsepAo0Dt8Cchg==}
+  '@atproto/oauth-provider-frontend@0.1.0':
+    resolution: {integrity: sha512-+AgUH/K+FA0UBwmSRjAG4VNWkH0uxsYxzgbkFlfB8h9s4dEXs6oEPizvpo/55CkxFuSPlBB0KfoaAdMC6ho/HA==}
     engines: {node: '>=18.7.0'}
 
-  '@atproto/oauth-provider@0.6.6':
-    resolution: {integrity: sha512-CDPIllfd8uqTpuhZ3tU3vJuJlJNiq8u+Gaf7mzlr96v+qroXLV/pifHHnlxvAiOAVMTkqJBhggTn7kUF4GbJKg==}
+  '@atproto/oauth-provider-ui@0.1.0':
+    resolution: {integrity: sha512-ugYdXJeCZUNIOlXFa7Ip0gtBxfmVKkEgd+G+xi/MkF6Ccz5uCruWRMW1z+KNBp19RnR0MyC76Tvc8CBjwjdxOw==}
     engines: {node: '>=18.7.0'}
 
-  '@atproto/oauth-types@0.2.4':
-    resolution: {integrity: sha512-V2LnlXi1CSmBQWTQgDm8l4oN7xYxlftVwM7hrvYNP+Jxo3Ozfe0QLK1Wy/CH6/ZqzrBBhYvcbf4DJYTUwPA+hw==}
+  '@atproto/oauth-provider@0.7.0':
+    resolution: {integrity: sha512-EVHWJTDJEmAxleubUItW2FHJk6m5GPT7pL0Lrb4fS7L9Vtv3VErklE9LcYvc+spt6EoI8OqCyf46IKcCJVVkGA==}
+    engines: {node: '>=18.7.0'}
 
-  '@atproto/pds@0.4.123':
-    resolution: {integrity: sha512-RxyxVIK7glW2DkASedHI6h7rn3leGR5wTS+Mk3T5UIdhPb+n2rTkK8X636LvIUZMB7Ne+J5aLXBr4yB6wRGbtg==}
+  '@atproto/oauth-types@0.2.5':
+    resolution: {integrity: sha512-CnRNb4iLbhCv+5LaRtCSaoOg2QcQGqaatpFZbEzim/aCXenETdadrBCJo3+YyvZDHzYSy02nRVxWSm4T9e+lYw==}
+
+  '@atproto/pds@0.4.124':
+    resolution: {integrity: sha512-08bQY0JTsq70/cDNp3hTumh3wvsZlnQlgfCpXiiVpmjM1+KlFeWV77UJqJfS3Dy1gwXZB66gpQs5Ct7Xdz0Tag==}
     engines: {node: '>=18.7.0'}
     hasBin: true
 
@@ -465,6 +475,106 @@ packages:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
 
+  '@rollup/rollup-android-arm-eabi@4.40.0':
+    resolution: {integrity: sha512-+Fbls/diZ0RDerhE8kyC6hjADCXA1K4yVNlH0EYfd2XjyH0UGgzaQ8MlT0pCXAThfxv3QUAczHaL+qSv1E4/Cg==}
+    cpu: [arm]
+    os: [android]
+
+  '@rollup/rollup-android-arm64@4.40.0':
+    resolution: {integrity: sha512-PPA6aEEsTPRz+/4xxAmaoWDqh67N7wFbgFUJGMnanCFs0TV99M0M8QhhaSCks+n6EbQoFvLQgYOGXxlMGQe/6w==}
+    cpu: [arm64]
+    os: [android]
+
+  '@rollup/rollup-darwin-arm64@4.40.0':
+    resolution: {integrity: sha512-GwYOcOakYHdfnjjKwqpTGgn5a6cUX7+Ra2HeNj/GdXvO2VJOOXCiYYlRFU4CubFM67EhbmzLOmACKEfvp3J1kQ==}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@rollup/rollup-darwin-x64@4.40.0':
+    resolution: {integrity: sha512-CoLEGJ+2eheqD9KBSxmma6ld01czS52Iw0e2qMZNpPDlf7Z9mj8xmMemxEucinev4LgHalDPczMyxzbq+Q+EtA==}
+    cpu: [x64]
+    os: [darwin]
+
+  '@rollup/rollup-freebsd-arm64@4.40.0':
+    resolution: {integrity: sha512-r7yGiS4HN/kibvESzmrOB/PxKMhPTlz+FcGvoUIKYoTyGd5toHp48g1uZy1o1xQvybwwpqpe010JrcGG2s5nkg==}
+    cpu: [arm64]
+    os: [freebsd]
+
+  '@rollup/rollup-freebsd-x64@4.40.0':
+    resolution: {integrity: sha512-mVDxzlf0oLzV3oZOr0SMJ0lSDd3xC4CmnWJ8Val8isp9jRGl5Dq//LLDSPFrasS7pSm6m5xAcKaw3sHXhBjoRw==}
+    cpu: [x64]
+    os: [freebsd]
+
+  '@rollup/rollup-linux-arm-gnueabihf@4.40.0':
+    resolution: {integrity: sha512-y/qUMOpJxBMy8xCXD++jeu8t7kzjlOCkoxxajL58G62PJGBZVl/Gwpm7JK9+YvlB701rcQTzjUZ1JgUoPTnoQA==}
+    cpu: [arm]
+    os: [linux]
+
+  '@rollup/rollup-linux-arm-musleabihf@4.40.0':
+    resolution: {integrity: sha512-GoCsPibtVdJFPv/BOIvBKO/XmwZLwaNWdyD8TKlXuqp0veo2sHE+A/vpMQ5iSArRUz/uaoj4h5S6Pn0+PdhRjg==}
+    cpu: [arm]
+    os: [linux]
+
+  '@rollup/rollup-linux-arm64-gnu@4.40.0':
+    resolution: {integrity: sha512-L5ZLphTjjAD9leJzSLI7rr8fNqJMlGDKlazW2tX4IUF9P7R5TMQPElpH82Q7eNIDQnQlAyiNVfRPfP2vM5Avvg==}
+    cpu: [arm64]
+    os: [linux]
+
+  '@rollup/rollup-linux-arm64-musl@4.40.0':
+    resolution: {integrity: sha512-ATZvCRGCDtv1Y4gpDIXsS+wfFeFuLwVxyUBSLawjgXK2tRE6fnsQEkE4csQQYWlBlsFztRzCnBvWVfcae/1qxQ==}
+    cpu: [arm64]
+    os: [linux]
+
+  '@rollup/rollup-linux-loongarch64-gnu@4.40.0':
+    resolution: {integrity: sha512-wG9e2XtIhd++QugU5MD9i7OnpaVb08ji3P1y/hNbxrQ3sYEelKJOq1UJ5dXczeo6Hj2rfDEL5GdtkMSVLa/AOg==}
+    cpu: [loong64]
+    os: [linux]
+
+  '@rollup/rollup-linux-powerpc64le-gnu@4.40.0':
+    resolution: {integrity: sha512-vgXfWmj0f3jAUvC7TZSU/m/cOE558ILWDzS7jBhiCAFpY2WEBn5jqgbqvmzlMjtp8KlLcBlXVD2mkTSEQE6Ixw==}
+    cpu: [ppc64]
+    os: [linux]
+
+  '@rollup/rollup-linux-riscv64-gnu@4.40.0':
+    resolution: {integrity: sha512-uJkYTugqtPZBS3Z136arevt/FsKTF/J9dEMTX/cwR7lsAW4bShzI2R0pJVw+hcBTWF4dxVckYh72Hk3/hWNKvA==}
+    cpu: [riscv64]
+    os: [linux]
+
+  '@rollup/rollup-linux-riscv64-musl@4.40.0':
+    resolution: {integrity: sha512-rKmSj6EXQRnhSkE22+WvrqOqRtk733x3p5sWpZilhmjnkHkpeCgWsFFo0dGnUGeA+OZjRl3+VYq+HyCOEuwcxQ==}
+    cpu: [riscv64]
+    os: [linux]
+
+  '@rollup/rollup-linux-s390x-gnu@4.40.0':
+    resolution: {integrity: sha512-SpnYlAfKPOoVsQqmTFJ0usx0z84bzGOS9anAC0AZ3rdSo3snecihbhFTlJZ8XMwzqAcodjFU4+/SM311dqE5Sw==}
+    cpu: [s390x]
+    os: [linux]
+
+  '@rollup/rollup-linux-x64-gnu@4.40.0':
+    resolution: {integrity: sha512-RcDGMtqF9EFN8i2RYN2W+64CdHruJ5rPqrlYw+cgM3uOVPSsnAQps7cpjXe9be/yDp8UC7VLoCoKC8J3Kn2FkQ==}
+    cpu: [x64]
+    os: [linux]
+
+  '@rollup/rollup-linux-x64-musl@4.40.0':
+    resolution: {integrity: sha512-HZvjpiUmSNx5zFgwtQAV1GaGazT2RWvqeDi0hV+AtC8unqqDSsaFjPxfsO6qPtKRRg25SisACWnJ37Yio8ttaw==}
+    cpu: [x64]
+    os: [linux]
+
+  '@rollup/rollup-win32-arm64-msvc@4.40.0':
+    resolution: {integrity: sha512-UtZQQI5k/b8d7d3i9AZmA/t+Q4tk3hOC0tMOMSq2GlMYOfxbesxG4mJSeDp0EHs30N9bsfwUvs3zF4v/RzOeTQ==}
+    cpu: [arm64]
+    os: [win32]
+
+  '@rollup/rollup-win32-ia32-msvc@4.40.0':
+    resolution: {integrity: sha512-+m03kvI2f5syIqHXCZLPVYplP8pQch9JHyXKZ3AGMKlg8dCyr2PKHjwRLiW53LTrN/Nc3EqHOKxUxzoSPdKddA==}
+    cpu: [ia32]
+    os: [win32]
+
+  '@rollup/rollup-win32-x64-msvc@4.40.0':
+    resolution: {integrity: sha512-lpPE1cLfP5oPzVjKMx10pgBmKELQnFJXHgvtHCtuJWOv8MxqdEIMNtgHgBFf7Ea2/7EuVwa9fodWUfXAlXZLZQ==}
+    cpu: [x64]
+    os: [win32]
+
   '@smithy/abort-controller@4.0.1':
     resolution: {integrity: sha512-fiUIYgIgRjMWznk6iLJz35K2YxSLHzLBA/RC6lBrKfQ8fHbPfvk7Pk9UvpKoHgJjI18MnbPuEju53zcVy6KF1g==}
     engines: {node: '>=18.0.0'}
@@ -685,6 +795,9 @@ packages:
 
   '@types/elliptic@6.4.18':
     resolution: {integrity: sha512-UseG6H5vjRiNpQvrhy4VF/JXdA3V/Fp5amvveaL+fs28BZ6xIKJBPnUPRlEaZpysD9MbpfaLi8lbl7PGUAkpWw==}
+
+  '@types/estree@1.0.7':
+    resolution: {integrity: sha512-w28IoSUCJpidD/TGviZwwMJckNESJZXFu7NBZ5YJ4mEUnNraUn9Pm8HSZm/jDF1pDWYKspWE7oVphigUPRakIQ==}
 
   '@types/node@22.10.5':
     resolution: {integrity: sha512-F8Q+SeGimwOo86fiovQh8qiXfFEh2/ocYv7tU5pJ3EXMSSxk1Joj5wefpFK2fHTf/N6HKGSxIDBT9f3gCxXPkQ==}
@@ -1055,6 +1168,11 @@ packages:
   fs-constants@1.0.0:
     resolution: {integrity: sha512-y6OAwoSIf7FyjMIv94u+b5rdheZEjzR63GTyZJm5qh4Bi+2YgwLCcI/fPFZkL5PSixOt6ZNKm+w+Hfp/Bciwow==}
 
+  fsevents@2.3.3:
+    resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
+    engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
+    os: [darwin]
+
   function-bind@1.1.2:
     resolution: {integrity: sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA==}
 
@@ -1213,6 +1331,11 @@ packages:
   mime@1.6.0:
     resolution: {integrity: sha512-x0Vn8spI+wuJ1O6S7gnbaQg8Pxh4NNHb7KSINmEWKiPE4RKOplvijn+NkmYmmRgP68mc70j2EbeTFRsrswaQeg==}
     engines: {node: '>=4'}
+    hasBin: true
+
+  mime@3.0.0:
+    resolution: {integrity: sha512-jSCU7/VB1loIWBZe14aEYHU/+1UMEHoaO7qxCOVJOw9GgH72VAWppxNcjU+x9a2k3GSIBXNKxXQFqRvvZ7vr3A==}
+    engines: {node: '>=10.0.0'}
     hasBin: true
 
   mimic-response@3.1.0:
@@ -1433,6 +1556,11 @@ packages:
   roarr@7.21.1:
     resolution: {integrity: sha512-3niqt5bXFY1InKU8HKWqqYTYjtrBaxBMnXELXCXUYgtNYGUtZM5rB46HIC430AyacL95iEniGf7RgqsesykLmQ==}
     engines: {node: '>=18.0'}
+
+  rollup@4.40.0:
+    resolution: {integrity: sha512-Noe455xmA96nnqH5piFtLobsGbCij7Tu+tb3c1vYjNbTkfzGqXqQXG3wJaYXkRZuQ0vEYN4bhwg7QnIrqB5B+w==}
+    engines: {node: '>=18.0.0', npm: '>=8.0.0'}
+    hasBin: true
 
   rxjs@7.8.1:
     resolution: {integrity: sha512-AA3TVj+0A2iuIoQkWEK/tqFjBq2j+6PO6Y0zJcvzLAFhEFIO3HL0vls9hWLncZbAAbK0mar7oZ4V079I/qPMxg==}
@@ -1684,6 +1812,11 @@ snapshots:
 
   '@atproto-labs/pipe@0.1.0': {}
 
+  '@atproto-labs/rollup-plugin-bundle-manifest@0.2.0(rollup@4.40.0)':
+    dependencies:
+      mime: 3.0.0
+      rollup: 4.40.0
+
   '@atproto-labs/simple-store-memory@0.1.2':
     dependencies:
       '@atproto-labs/simple-store': 0.1.2
@@ -1769,12 +1902,12 @@ snapshots:
       '@atproto/common-web': 0.4.1
       '@atproto/crypto': 0.4.4
 
-  '@atproto/jwk-jose@0.1.5':
+  '@atproto/jwk-jose@0.1.6':
     dependencies:
-      '@atproto/jwk': 0.1.4
+      '@atproto/jwk': 0.1.5
       jose: 5.9.6
 
-  '@atproto/jwk@0.1.4':
+  '@atproto/jwk@0.1.5':
     dependencies:
       multiformats: 9.9.0
       zod: 3.24.1
@@ -1787,25 +1920,42 @@ snapshots:
       multiformats: 9.9.0
       zod: 3.24.1
 
-  '@atproto/oauth-provider-api@0.0.1':
+  '@atproto/oauth-provider-api@0.1.0':
     dependencies:
-      '@atproto/oauth-types': 0.2.4
+      '@atproto/jwk': 0.1.5
+      '@atproto/oauth-types': 0.2.5
 
-  '@atproto/oauth-provider-ui@0.0.2': {}
+  '@atproto/oauth-provider-frontend@0.1.0(rollup@4.40.0)':
+    optionalDependencies:
+      '@atproto-labs/rollup-plugin-bundle-manifest': 0.2.0(rollup@4.40.0)
+      '@atproto/oauth-provider-api': 0.1.0
+      '@atproto/oauth-types': 0.2.5
+    transitivePeerDependencies:
+      - rollup
 
-  '@atproto/oauth-provider@0.6.6':
+  '@atproto/oauth-provider-ui@0.1.0(rollup@4.40.0)':
+    optionalDependencies:
+      '@atproto-labs/rollup-plugin-bundle-manifest': 0.2.0(rollup@4.40.0)
+      '@atproto/oauth-provider-api': 0.1.0
+      '@atproto/oauth-types': 0.2.5
+    transitivePeerDependencies:
+      - rollup
+
+  '@atproto/oauth-provider@0.7.0(rollup@4.40.0)':
     dependencies:
       '@atproto-labs/fetch': 0.2.2
       '@atproto-labs/fetch-node': 0.1.8
       '@atproto-labs/pipe': 0.1.0
+      '@atproto-labs/rollup-plugin-bundle-manifest': 0.2.0(rollup@4.40.0)
       '@atproto-labs/simple-store': 0.1.2
       '@atproto-labs/simple-store-memory': 0.1.2
       '@atproto/common': 0.4.10
-      '@atproto/jwk': 0.1.4
-      '@atproto/jwk-jose': 0.1.5
-      '@atproto/oauth-provider-api': 0.0.1
-      '@atproto/oauth-provider-ui': 0.0.2
-      '@atproto/oauth-types': 0.2.4
+      '@atproto/jwk': 0.1.5
+      '@atproto/jwk-jose': 0.1.6
+      '@atproto/oauth-provider-api': 0.1.0
+      '@atproto/oauth-provider-frontend': 0.1.0(rollup@4.40.0)
+      '@atproto/oauth-provider-ui': 0.1.0(rollup@4.40.0)
+      '@atproto/oauth-types': 0.2.5
       '@atproto/syntax': 0.4.0
       '@hapi/accept': 6.0.3
       '@hapi/address': 5.1.1
@@ -1820,14 +1970,15 @@ snapshots:
       psl: 1.15.0
       zod: 3.24.1
     transitivePeerDependencies:
+      - rollup
       - supports-color
 
-  '@atproto/oauth-types@0.2.4':
+  '@atproto/oauth-types@0.2.5':
     dependencies:
-      '@atproto/jwk': 0.1.4
+      '@atproto/jwk': 0.1.5
       zod: 3.24.1
 
-  '@atproto/pds@0.4.123':
+  '@atproto/pds@0.4.124(rollup@4.40.0)':
     dependencies:
       '@atproto-labs/fetch-node': 0.1.8
       '@atproto-labs/xrpc-utils': 0.0.11
@@ -1837,7 +1988,7 @@ snapshots:
       '@atproto/crypto': 0.4.4
       '@atproto/identity': 0.4.7
       '@atproto/lexicon': 0.4.10
-      '@atproto/oauth-provider': 0.6.6
+      '@atproto/oauth-provider': 0.7.0(rollup@4.40.0)
       '@atproto/repo': 0.8.0
       '@atproto/syntax': 0.4.0
       '@atproto/xrpc': 0.6.12
@@ -1874,6 +2025,7 @@ snapshots:
       - aws-crt
       - bufferutil
       - debug
+      - rollup
       - supports-color
       - utf-8-validate
 
@@ -2686,6 +2838,66 @@ snapshots:
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
+  '@rollup/rollup-android-arm-eabi@4.40.0':
+    optional: true
+
+  '@rollup/rollup-android-arm64@4.40.0':
+    optional: true
+
+  '@rollup/rollup-darwin-arm64@4.40.0':
+    optional: true
+
+  '@rollup/rollup-darwin-x64@4.40.0':
+    optional: true
+
+  '@rollup/rollup-freebsd-arm64@4.40.0':
+    optional: true
+
+  '@rollup/rollup-freebsd-x64@4.40.0':
+    optional: true
+
+  '@rollup/rollup-linux-arm-gnueabihf@4.40.0':
+    optional: true
+
+  '@rollup/rollup-linux-arm-musleabihf@4.40.0':
+    optional: true
+
+  '@rollup/rollup-linux-arm64-gnu@4.40.0':
+    optional: true
+
+  '@rollup/rollup-linux-arm64-musl@4.40.0':
+    optional: true
+
+  '@rollup/rollup-linux-loongarch64-gnu@4.40.0':
+    optional: true
+
+  '@rollup/rollup-linux-powerpc64le-gnu@4.40.0':
+    optional: true
+
+  '@rollup/rollup-linux-riscv64-gnu@4.40.0':
+    optional: true
+
+  '@rollup/rollup-linux-riscv64-musl@4.40.0':
+    optional: true
+
+  '@rollup/rollup-linux-s390x-gnu@4.40.0':
+    optional: true
+
+  '@rollup/rollup-linux-x64-gnu@4.40.0':
+    optional: true
+
+  '@rollup/rollup-linux-x64-musl@4.40.0':
+    optional: true
+
+  '@rollup/rollup-win32-arm64-msvc@4.40.0':
+    optional: true
+
+  '@rollup/rollup-win32-ia32-msvc@4.40.0':
+    optional: true
+
+  '@rollup/rollup-win32-x64-msvc@4.40.0':
+    optional: true
+
   '@smithy/abort-controller@4.0.1':
     dependencies:
       '@smithy/types': 4.1.0
@@ -3026,6 +3238,8 @@ snapshots:
   '@types/elliptic@6.4.18':
     dependencies:
       '@types/bn.js': 5.1.6
+
+  '@types/estree@1.0.7': {}
 
   '@types/node@22.10.5':
     dependencies:
@@ -3418,6 +3632,9 @@ snapshots:
 
   fs-constants@1.0.0: {}
 
+  fsevents@2.3.3:
+    optional: true
+
   function-bind@1.1.2: {}
 
   get-caller-file@2.0.5: {}
@@ -3588,6 +3805,8 @@ snapshots:
       mime-db: 1.52.0
 
   mime@1.6.0: {}
+
+  mime@3.0.0: {}
 
   mimic-response@3.1.0: {}
 
@@ -3802,6 +4021,32 @@ snapshots:
       fast-printf: 1.6.10
       safe-stable-stringify: 2.5.0
       semver-compare: 1.0.0
+
+  rollup@4.40.0:
+    dependencies:
+      '@types/estree': 1.0.7
+    optionalDependencies:
+      '@rollup/rollup-android-arm-eabi': 4.40.0
+      '@rollup/rollup-android-arm64': 4.40.0
+      '@rollup/rollup-darwin-arm64': 4.40.0
+      '@rollup/rollup-darwin-x64': 4.40.0
+      '@rollup/rollup-freebsd-arm64': 4.40.0
+      '@rollup/rollup-freebsd-x64': 4.40.0
+      '@rollup/rollup-linux-arm-gnueabihf': 4.40.0
+      '@rollup/rollup-linux-arm-musleabihf': 4.40.0
+      '@rollup/rollup-linux-arm64-gnu': 4.40.0
+      '@rollup/rollup-linux-arm64-musl': 4.40.0
+      '@rollup/rollup-linux-loongarch64-gnu': 4.40.0
+      '@rollup/rollup-linux-powerpc64le-gnu': 4.40.0
+      '@rollup/rollup-linux-riscv64-gnu': 4.40.0
+      '@rollup/rollup-linux-riscv64-musl': 4.40.0
+      '@rollup/rollup-linux-s390x-gnu': 4.40.0
+      '@rollup/rollup-linux-x64-gnu': 4.40.0
+      '@rollup/rollup-linux-x64-musl': 4.40.0
+      '@rollup/rollup-win32-arm64-msvc': 4.40.0
+      '@rollup/rollup-win32-ia32-msvc': 4.40.0
+      '@rollup/rollup-win32-x64-msvc': 4.40.0
+      fsevents: 2.3.3
 
   rxjs@7.8.1:
     dependencies:
