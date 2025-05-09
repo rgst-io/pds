@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@atproto/pds':
-        specifier: 0.4.135
-        version: 0.4.135
+        specifier: 0.4.136
+        version: 0.4.136
 
 packages:
 
@@ -88,8 +88,8 @@ packages:
   '@atproto/oauth-types@0.2.7':
     resolution: {integrity: sha512-2SlDveiSI0oowC+sfuNd/npV8jw/FhokSS26qyUyldTg1g9ZlhxXUfMP4IZOPeZcVn9EszzQRHs1H9ZJqVQIew==}
 
-  '@atproto/pds@0.4.135':
-    resolution: {integrity: sha512-QH5Txh46OFwyLnd5DDukbnVs2Cxs5zdycwwqtdQZVcSnAbsOjFSu0TEprIevfmCvmeUjhOEwh/+IQKpPFSFsGQ==}
+  '@atproto/pds@0.4.136':
+    resolution: {integrity: sha512-sao4iq/CRWwdM0gljw7XGg/ef4OTWFc6RU2g0nNgJLvxfPO3uMG8Ze1S6tfhr9wvhIKZWVCzzPruTglrlWMEYw==}
     engines: {node: '>=18.7.0'}
 
   '@atproto/repo@0.8.1':
@@ -1838,7 +1838,7 @@ snapshots:
       '@atproto/jwk': 0.1.5
       zod: 3.24.1
 
-  '@atproto/pds@0.4.135':
+  '@atproto/pds@0.4.136':
     dependencies:
       '@atproto-labs/fetch-node': 0.1.8
       '@atproto-labs/xrpc-utils': 0.0.14
