@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@atproto/pds':
-        specifier: 0.4.142
-        version: 0.4.142
+        specifier: 0.4.143
+        version: 0.4.143
 
 packages:
 
@@ -77,19 +77,19 @@ packages:
     resolution: {integrity: sha512-FdDBuwy827+etjIcRwZU7dtxa8Ltso3ufVLMEi8A2V91v21XDysZjLANC6cvmNNSUcS4E/J6ZAwTrQDo7O5axw==}
     engines: {node: '>=18.7.0'}
 
-  '@atproto/oauth-provider-ui@0.1.6':
-    resolution: {integrity: sha512-pJzV9ouNj1/TDUCl3CWEZrHoUese4lcKx5F59t2OiLFm2K7T7QrszKUIMyU5QdiQHv551B0ZJOkJ8+4b/fVGPA==}
+  '@atproto/oauth-provider-ui@0.1.7':
+    resolution: {integrity: sha512-FXUVDJkONWrsGjDwfzS1p4XEqtZdUsdzolvAiIHD+vh1B0K7A+S8ZKiBzSjaI7Q89OhriugCuxQfPivd9HUczA==}
     engines: {node: '>=18.7.0'}
 
-  '@atproto/oauth-provider@0.7.9':
-    resolution: {integrity: sha512-j1JAC8W1ZW2IDqdx0uBVq13g9Gq31w1yU99r9ZMW7YnXpE/pzpg+CPNfpSj5nbDvzeR3RGKiQ/7/kSTh46YG+A==}
+  '@atproto/oauth-provider@0.7.10':
+    resolution: {integrity: sha512-ePs9rE+LQ18aKUVm6pIiT0Sf0ZSb1YpsYHHFfeamSSDfo31HEiwKIz9UYSedlqIwHC4GK00O9Jwit8U+NUhIew==}
     engines: {node: '>=18.7.0'}
 
   '@atproto/oauth-types@0.2.7':
     resolution: {integrity: sha512-2SlDveiSI0oowC+sfuNd/npV8jw/FhokSS26qyUyldTg1g9ZlhxXUfMP4IZOPeZcVn9EszzQRHs1H9ZJqVQIew==}
 
-  '@atproto/pds@0.4.142':
-    resolution: {integrity: sha512-6NhyUIrrjYaXu9JidWeFiUcvdDxwD/tVZH0LDyHH2syk+HpDhvYhMh7LBimpB5qNtAQkz63yuQ/HCl+jdNMvaw==}
+  '@atproto/pds@0.4.143':
+    resolution: {integrity: sha512-Do+9jzIi6pw1RSgTDO58jbx95EfPFrqnYJfy/sxv1soGjSH9ymno94/RtNnmBIECgH1oEAG/xlLg70VtfKrd7g==}
     engines: {node: '>=18.7.0'}
 
   '@atproto/repo@0.8.1':
@@ -1791,11 +1791,11 @@ snapshots:
     optionalDependencies:
       '@atproto/oauth-provider-api': 0.1.2
 
-  '@atproto/oauth-provider-ui@0.1.6':
+  '@atproto/oauth-provider-ui@0.1.7':
     optionalDependencies:
       '@atproto/oauth-provider-api': 0.1.2
 
-  '@atproto/oauth-provider@0.7.9':
+  '@atproto/oauth-provider@0.7.10':
     dependencies:
       '@atproto-labs/fetch': 0.2.3
       '@atproto-labs/fetch-node': 0.1.9
@@ -1807,7 +1807,7 @@ snapshots:
       '@atproto/jwk-jose': 0.1.6
       '@atproto/oauth-provider-api': 0.1.2
       '@atproto/oauth-provider-frontend': 0.1.5
-      '@atproto/oauth-provider-ui': 0.1.6
+      '@atproto/oauth-provider-ui': 0.1.7
       '@atproto/oauth-types': 0.2.7
       '@atproto/syntax': 0.4.0
       '@hapi/accept': 6.0.3
@@ -1829,7 +1829,7 @@ snapshots:
       '@atproto/jwk': 0.1.5
       zod: 3.24.1
 
-  '@atproto/pds@0.4.142':
+  '@atproto/pds@0.4.143':
     dependencies:
       '@atproto-labs/fetch-node': 0.1.9
       '@atproto-labs/xrpc-utils': 0.0.14
@@ -1839,7 +1839,7 @@ snapshots:
       '@atproto/crypto': 0.4.4
       '@atproto/identity': 0.4.8
       '@atproto/lexicon': 0.4.11
-      '@atproto/oauth-provider': 0.7.9
+      '@atproto/oauth-provider': 0.7.10
       '@atproto/repo': 0.8.1
       '@atproto/syntax': 0.4.0
       '@atproto/xrpc': 0.7.0
