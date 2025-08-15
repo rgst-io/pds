@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@atproto/pds':
-        specifier: 0.4.165
-        version: 0.4.165
+        specifier: 0.4.169
+        version: 0.4.169
 
 packages:
 
@@ -64,35 +64,38 @@ packages:
     resolution: {integrity: sha512-Z0sLnJ87SeNdAifT+rqpgE1Rc3layMMW25gfWNo4u40RGuRODbdfAZlTwBSU2r+Vk45hU+iE+xeQspfednCEnA==}
     engines: {node: '>=18.7.0'}
 
-  '@atproto/jwk-jose@0.1.9':
-    resolution: {integrity: sha512-HT9GcUe6htDxI5OSYXWdeS6QZ9lpuDDvJk508ppi8a48E/1f8eumoM0QhgbFRF9IKAnnFrtnZDOAvljQzFKwwQ==}
+  '@atproto/jwk-jose@0.1.10':
+    resolution: {integrity: sha512-Eiu/u4tZHz3IIhHZt0zneYEffSAO3Oqk/ToKwlu1TqKte6sjtPs/4uquSiAAGFYozqgo92JC/AQclWzzkHI5QQ==}
 
-  '@atproto/jwk@0.4.0':
-    resolution: {integrity: sha512-tvp4iZrzqEzKCeTOKz50/o6WdsZzOuWmWjF6On5QAp04fLwLpsFu2Hixgx/lA1KBO0O4sns7YSGcAqSSX6Rdog==}
+  '@atproto/jwk@0.5.0':
+    resolution: {integrity: sha512-Qi2NtEqhkG+uz3CKia4+H05WMV/z//dz3ESo5+cyBKrOnxVTJ5ZubMyltWjoYvy6v/jLhorXdDWcjn07yky7MQ==}
 
   '@atproto/lexicon@0.4.12':
     resolution: {integrity: sha512-fcEvEQ1GpQYF5igZ4IZjPWEoWVpsEF22L9RexxLS3ptfySXLflEyH384e7HITzO/73McDeaJx3lqHIuqn9ulnw==}
 
-  '@atproto/oauth-provider-api@0.1.6':
-    resolution: {integrity: sha512-4Q6ZCnTmmdiWiA+KMrfbZmqjxTSgMe+YE68+3RccwOCIgPt171TiDHGKIayep9n1RDnuucVQoqvVXOT4kmAsjw==}
+  '@atproto/oauth-provider-api@0.2.1':
+    resolution: {integrity: sha512-a3sbgsF3wJwCB8bVkM8CsSGuG2bGYl3O4fdIZjTu1IYO+yyYbPYs6r3i2xmNgWZ3bgkWBz4dBOhm8y1rDJuDDQ==}
 
-  '@atproto/oauth-provider-frontend@0.1.10':
-    resolution: {integrity: sha512-bOFpi5OIxWv4Q9ci1+PAXEzIZaiu5inepC7pRFYqgqgLoCO0MWH/5Qkn/f6jMpDwPdtBqAiPg9tjE7E3le6NJA==}
+  '@atproto/oauth-provider-frontend@0.1.12':
+    resolution: {integrity: sha512-vIJjgSkcjcZltAw9duu+mSye4uOtGg6dQqE7KJvnOCexurCi7F/Zw3CDcDdVCl6e/sC/7IM/aFmKZfeYOq5ncA==}
     engines: {node: '>=18.7.0'}
 
-  '@atproto/oauth-provider-ui@0.1.11':
-    resolution: {integrity: sha512-9fflyDt4Y3RDJIfbonxVeMbQtLLQrkQSDhWhPXp9xbZ/uYBddaAw+svBfFoMY7dxdlJbQeUPobsUctEm3qAILg==}
+  '@atproto/oauth-provider-ui@0.2.1':
+    resolution: {integrity: sha512-DouvvlSqgEVXn1/FkijiXaCP3QOR8xI5L+aW0laWhxOAoBkEYJ2DY3lZbAMhGtXjXfHIrQ44zUiSC/Nw2KEKbQ==}
     engines: {node: '>=18.7.0'}
 
-  '@atproto/oauth-provider@0.9.3':
-    resolution: {integrity: sha512-TAhsCYDB/1twEA1vqjLAz7lxKI8W59eNs239MujE35Cc9l4lRHyMopoFv5JmgNnxDvloB5l6RxpTbXVC6wnKpQ==}
+  '@atproto/oauth-provider@0.10.2':
+    resolution: {integrity: sha512-DcdxxfHyI7CQmN3YJi8ljanijgOWp4IaYZkCYWZI6N7/Gmpgwrh0sszwKH2W3BuHnf1LKh4EfWCiR9scWLHwiQ==}
     engines: {node: '>=18.7.0'}
 
-  '@atproto/oauth-types@0.4.0':
-    resolution: {integrity: sha512-FrRH9JsPw9H4JxfPDrbrI+pB102tbHTygajfHay7xwz78HPOjSbWPRgWW2hYS4w8vDYdB3PYbBj1jPoKetW7LA==}
+  '@atproto/oauth-scopes@0.0.2':
+    resolution: {integrity: sha512-Wb3/7/zu17npmniMnF4dqcH+shNmZIX7ZuWCF4ThadCDPX0hZ7TV3D3P+JuJAhhQ/b+cCt1PBvpUeWP2cb9rhg==}
 
-  '@atproto/pds@0.4.165':
-    resolution: {integrity: sha512-rK0sF8hfvOCCXjtm+b0Ic3A2fnq4b7Q8c/vEOaMK3ZqwS8VwFeq9CtopotAMr0swDSupjxiH5aW3NqmNYMvbUg==}
+  '@atproto/oauth-types@0.4.1':
+    resolution: {integrity: sha512-c5ixf2ZOzcltOu1fDBnO/tok6Wj7JDDK66+Z0q/+bAr8LXgOnxP7zQfJ+DD4gTkB+saTqsqWtVv8qvx/IEtm1g==}
+
+  '@atproto/pds@0.4.169':
+    resolution: {integrity: sha512-JXaZ+C/DfYWZ1j17mHmYcMtxRJaMdX0/W2Aqj9iZLQe27BZT+Zdy3mhMt92zqqzCYj1QfhhBdjRtj7CfaaeiPg==}
     engines: {node: '>=18.7.0'}
 
   '@atproto/repo@0.8.5':
@@ -848,10 +851,6 @@ packages:
 
   cookie-signature@1.0.6:
     resolution: {integrity: sha512-QADzlaHc8icV8I7vbaJXJwod9HWYp8uCqf1xa4OfNu1T7JVxQIrUgOWtHdNDtPiywmFbiS12VjotIXLrKM3orQ==}
-
-  cookie@0.6.0:
-    resolution: {integrity: sha512-U71cyTamuh1CRNCfpGY6to28lxvNwPG4Guz/EVjgf3Jmzv0vlDp1atT9eS5dDjMYHucpHbWns6Lwf3BKz6svdw==}
-    engines: {node: '>= 0.6'}
 
   cookie@0.7.1:
     resolution: {integrity: sha512-6DnInpx7SJ2AK3+CTUE/ZM0vWTUboZCegxhC2xiIydHR9jNuTAASBrfEpHhiGOZw/nX51bHt6YQl8jsGo4y/0w==}
@@ -1771,12 +1770,12 @@ snapshots:
       '@atproto/common-web': 0.4.2
       '@atproto/crypto': 0.4.4
 
-  '@atproto/jwk-jose@0.1.9':
+  '@atproto/jwk-jose@0.1.10':
     dependencies:
-      '@atproto/jwk': 0.4.0
+      '@atproto/jwk': 0.5.0
       jose: 5.9.6
 
-  '@atproto/jwk@0.4.0':
+  '@atproto/jwk@0.5.0':
     dependencies:
       multiformats: 9.9.0
       zod: 3.24.1
@@ -1789,20 +1788,20 @@ snapshots:
       multiformats: 9.9.0
       zod: 3.24.1
 
-  '@atproto/oauth-provider-api@0.1.6':
+  '@atproto/oauth-provider-api@0.2.1':
     dependencies:
-      '@atproto/jwk': 0.4.0
-      '@atproto/oauth-types': 0.4.0
+      '@atproto/jwk': 0.5.0
+      '@atproto/oauth-types': 0.4.1
 
-  '@atproto/oauth-provider-frontend@0.1.10':
+  '@atproto/oauth-provider-frontend@0.1.12':
     optionalDependencies:
-      '@atproto/oauth-provider-api': 0.1.6
+      '@atproto/oauth-provider-api': 0.2.1
 
-  '@atproto/oauth-provider-ui@0.1.11':
+  '@atproto/oauth-provider-ui@0.2.1':
     optionalDependencies:
-      '@atproto/oauth-provider-api': 0.1.6
+      '@atproto/oauth-provider-api': 0.2.1
 
-  '@atproto/oauth-provider@0.9.3':
+  '@atproto/oauth-provider@0.10.2':
     dependencies:
       '@atproto-labs/fetch': 0.2.3
       '@atproto-labs/fetch-node': 0.1.9
@@ -1811,18 +1810,19 @@ snapshots:
       '@atproto-labs/simple-store-memory': 0.1.3
       '@atproto/common': 0.4.11
       '@atproto/did': 0.1.5
-      '@atproto/jwk': 0.4.0
-      '@atproto/jwk-jose': 0.1.9
-      '@atproto/oauth-provider-api': 0.1.6
-      '@atproto/oauth-provider-frontend': 0.1.10
-      '@atproto/oauth-provider-ui': 0.1.11
-      '@atproto/oauth-types': 0.4.0
+      '@atproto/jwk': 0.5.0
+      '@atproto/jwk-jose': 0.1.10
+      '@atproto/oauth-provider-api': 0.2.1
+      '@atproto/oauth-provider-frontend': 0.1.12
+      '@atproto/oauth-provider-ui': 0.2.1
+      '@atproto/oauth-scopes': 0.0.2
+      '@atproto/oauth-types': 0.4.1
       '@atproto/syntax': 0.4.0
       '@hapi/accept': 6.0.3
       '@hapi/address': 5.1.1
       '@hapi/bourne': 3.0.0
       '@hapi/content': 6.0.0
-      cookie: 0.6.0
+      cookie: 0.7.1
       disposable-email-domains-js: 1.8.0
       forwarded: 0.2.0
       http-errors: 2.0.0
@@ -1832,12 +1832,14 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@atproto/oauth-types@0.4.0':
+  '@atproto/oauth-scopes@0.0.2': {}
+
+  '@atproto/oauth-types@0.4.1':
     dependencies:
-      '@atproto/jwk': 0.4.0
+      '@atproto/jwk': 0.5.0
       zod: 3.24.1
 
-  '@atproto/pds@0.4.165':
+  '@atproto/pds@0.4.169':
     dependencies:
       '@atproto-labs/fetch-node': 0.1.9
       '@atproto-labs/xrpc-utils': 0.0.18
@@ -1847,7 +1849,8 @@ snapshots:
       '@atproto/crypto': 0.4.4
       '@atproto/identity': 0.4.8
       '@atproto/lexicon': 0.4.12
-      '@atproto/oauth-provider': 0.9.3
+      '@atproto/oauth-provider': 0.10.2
+      '@atproto/oauth-scopes': 0.0.2
       '@atproto/repo': 0.8.5
       '@atproto/syntax': 0.4.0
       '@atproto/xrpc': 0.7.1
@@ -3223,8 +3226,6 @@ snapshots:
   content-type@1.0.5: {}
 
   cookie-signature@1.0.6: {}
-
-  cookie@0.6.0: {}
 
   cookie@0.7.1: {}
 
