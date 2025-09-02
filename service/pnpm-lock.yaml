@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@atproto/pds':
-        specifier: 0.4.174
-        version: 0.4.174
+        specifier: 0.4.176
+        version: 0.4.176
 
 packages:
 
@@ -33,8 +33,8 @@ packages:
   '@atproto-labs/xrpc-utils@0.0.21':
     resolution: {integrity: sha512-P8bwmqakvhp3vueODWoPtfnpzDagXQLO/kuwwrBMrQmjorDW2eYwgDN4Gx+x8D4zxT/hUnVf3D321MyUISPb2A==}
 
-  '@atproto/api@0.16.6':
-    resolution: {integrity: sha512-/ZDWeHNAMmQFicyITAoGCxQujDU+wyzsWjpPnQfVa+ZKMfZEngipMFOr4fBwxHixEFLmuh58+5vJyylAFVrQ4g==}
+  '@atproto/api@0.16.7':
+    resolution: {integrity: sha512-EdVWkEgaEQm1LEiiP1fW/XXXpMNmtvT5c9+cZVRiwYc4rTB66WIJJWqmaMT/tB7nccMkFjr6FtwObq5LewWfgw==}
 
   '@atproto/aws@0.2.28':
     resolution: {integrity: sha512-7RMGJvt85s76fn58Rf70alc3wNWEMjMLbH9odkU6v8CAFQYpdWgzFQQixcLsJNqDeci8DGZpgbcoetTDHsFRtg==}
@@ -87,8 +87,8 @@ packages:
     resolution: {integrity: sha512-B5tRGOt/p1IstxoJZdCAKHafeHTkkjHZ46toM8xELtuX+96NmwbieVe7+bWj0Fr4z0UXailBJr44Ye6QaiXDsA==}
     engines: {node: '>=18.7.0'}
 
-  '@atproto/oauth-provider@0.11.1':
-    resolution: {integrity: sha512-AoNY9BX9nfAD+qDTPFbypVFU8TtNWcIzpvBbox92EsRMh0rzwXQzhnReUmmIYsssoNQvuZwS2w7DGPTTEC6QZQ==}
+  '@atproto/oauth-provider@0.11.2':
+    resolution: {integrity: sha512-w+oa6qc6pj6fMZCXsaxjlDTnNRgohV7Xm+JO0q+Vp19qnpiVNKMJfvYF4zfWTc3EZ3QQaNzlv1U5AQvRAC0oUA==}
     engines: {node: '>=18.7.0'}
 
   '@atproto/oauth-scopes@0.1.0':
@@ -97,8 +97,8 @@ packages:
   '@atproto/oauth-types@0.4.1':
     resolution: {integrity: sha512-c5ixf2ZOzcltOu1fDBnO/tok6Wj7JDDK66+Z0q/+bAr8LXgOnxP7zQfJ+DD4gTkB+saTqsqWtVv8qvx/IEtm1g==}
 
-  '@atproto/pds@0.4.174':
-    resolution: {integrity: sha512-BYp71crKpzoYRqs3tir/esCmUPSzppaK5X/AMikjCoWVBzit42L93kNe7YQ3ckuU3yOimtatoDelueOb7DBs+Q==}
+  '@atproto/pds@0.4.176':
+    resolution: {integrity: sha512-ezRYQsDWZdWiP94Jc2R/SXHVo4QTTq0MD+w6FUuuNqq+glRGx+x1sVU98DLEcI78M7J3sHIYybf+tX9PNyBsuA==}
     engines: {node: '>=18.7.0'}
 
   '@atproto/repo@0.8.8':
@@ -1700,7 +1700,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@atproto/api@0.16.6':
+  '@atproto/api@0.16.7':
     dependencies:
       '@atproto/common-web': 0.4.2
       '@atproto/lexicon': 0.5.0
@@ -1814,7 +1814,7 @@ snapshots:
     optionalDependencies:
       '@atproto/oauth-provider-api': 0.3.0
 
-  '@atproto/oauth-provider@0.11.1':
+  '@atproto/oauth-provider@0.11.2':
     dependencies:
       '@atproto-labs/fetch': 0.2.3
       '@atproto-labs/fetch-node': 0.1.10
@@ -1858,18 +1858,18 @@ snapshots:
       '@atproto/jwk': 0.5.0
       zod: 3.24.1
 
-  '@atproto/pds@0.4.174':
+  '@atproto/pds@0.4.176':
     dependencies:
       '@atproto-labs/fetch-node': 0.1.10
       '@atproto-labs/xrpc-utils': 0.0.21
-      '@atproto/api': 0.16.6
+      '@atproto/api': 0.16.7
       '@atproto/aws': 0.2.28
       '@atproto/common': 0.4.11
       '@atproto/crypto': 0.4.4
       '@atproto/identity': 0.4.8
       '@atproto/lexicon': 0.5.0
       '@atproto/lexicon-resolver': 0.2.0
-      '@atproto/oauth-provider': 0.11.1
+      '@atproto/oauth-provider': 0.11.2
       '@atproto/oauth-scopes': 0.1.0
       '@atproto/repo': 0.8.8
       '@atproto/syntax': 0.4.1
