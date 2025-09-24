@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@atproto/pds':
-        specifier: 0.4.180
-        version: 0.4.180
+        specifier: 0.4.181
+        version: 0.4.181
 
 packages:
 
@@ -38,8 +38,8 @@ packages:
   '@atproto-labs/xrpc-utils@0.0.22':
     resolution: {integrity: sha512-XGDbTmVgibtcR6FwJepD/QKofG1B5EBBPebk/IVF4aHeBE/6jOd7DnfuKrBimv2GJ2JGrlvHXmjYZdfmCtYEbw==}
 
-  '@atproto/api@0.16.9':
-    resolution: {integrity: sha512-hXbnBIDEIwXxxyduxxZsf0aP8Z+JKyfG7L47FZqAYOI6uNm8oBTLLrHQ2RmJZZeyMIMM17gvxNtPDoULKQfupw==}
+  '@atproto/api@0.16.10':
+    resolution: {integrity: sha512-PPWCk73+9IcbadUFBMI86RIV4UQSozRZ1K2XNB+0+CIhUtOjt8jfGDwU/VxGA+HZrDbjOCpvhy5KbOrtoLgGVQ==}
 
   '@atproto/aws@0.2.29':
     resolution: {integrity: sha512-KSl3eRVRsJY5LznKwg9GilSzMnitag4qlqwDRUu7HfMFdjdf5U1k25MqBH7hGbVQMt1YWvPFjQSuMpqVs5tDAw==}
@@ -102,8 +102,8 @@ packages:
   '@atproto/oauth-types@0.4.1':
     resolution: {integrity: sha512-c5ixf2ZOzcltOu1fDBnO/tok6Wj7JDDK66+Z0q/+bAr8LXgOnxP7zQfJ+DD4gTkB+saTqsqWtVv8qvx/IEtm1g==}
 
-  '@atproto/pds@0.4.180':
-    resolution: {integrity: sha512-Zx5SwZSv3+gJWLdFaRqbcxNSSS+qqxQ26xtM2sZVs0qJoYhiqp7x2heYlyux6siOWHcEJrkvBY0Dt88Ve7rPyQ==}
+  '@atproto/pds@0.4.181':
+    resolution: {integrity: sha512-oLT+8P3EqQS7FtT0KOFw5k3XlORwXwH5YpT+Dmc3lYzKyUgaJWpO47aqjQhQco3WzQqOMrzY0qsBQXLOBkaWbA==}
     engines: {node: '>=18.7.0'}
 
   '@atproto/repo@0.8.9':
@@ -1701,7 +1701,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@atproto/api@0.16.9':
+  '@atproto/api@0.16.10':
     dependencies:
       '@atproto/common-web': 0.4.3
       '@atproto/lexicon': 0.5.1
@@ -1860,14 +1860,14 @@ snapshots:
       '@atproto/jwk': 0.5.0
       zod: 3.24.1
 
-  '@atproto/pds@0.4.180':
+  '@atproto/pds@0.4.181':
     dependencies:
       '@atproto-labs/fetch-node': 0.1.10
       '@atproto-labs/simple-store': 0.3.0
       '@atproto-labs/simple-store-memory': 0.1.4
       '@atproto-labs/simple-store-redis': 0.0.1(ioredis@5.4.2)
       '@atproto-labs/xrpc-utils': 0.0.22
-      '@atproto/api': 0.16.9
+      '@atproto/api': 0.16.10
       '@atproto/aws': 0.2.29
       '@atproto/common': 0.4.12
       '@atproto/crypto': 0.4.4
