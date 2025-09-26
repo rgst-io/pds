@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@atproto/pds':
-        specifier: 0.4.181
-        version: 0.4.181
+        specifier: 0.4.182
+        version: 0.4.182
 
 packages:
 
@@ -38,11 +38,11 @@ packages:
   '@atproto-labs/xrpc-utils@0.0.22':
     resolution: {integrity: sha512-XGDbTmVgibtcR6FwJepD/QKofG1B5EBBPebk/IVF4aHeBE/6jOd7DnfuKrBimv2GJ2JGrlvHXmjYZdfmCtYEbw==}
 
-  '@atproto/api@0.16.10':
-    resolution: {integrity: sha512-PPWCk73+9IcbadUFBMI86RIV4UQSozRZ1K2XNB+0+CIhUtOjt8jfGDwU/VxGA+HZrDbjOCpvhy5KbOrtoLgGVQ==}
+  '@atproto/api@0.16.11':
+    resolution: {integrity: sha512-1dhfQNHiclb102RW+Ea8Nft5olfqU0Ev/vlQaSX6mWNo1aP5zT+sPODJ8+BTUOYk3vcuvL7QMkqA/rLYy2PMyw==}
 
-  '@atproto/aws@0.2.29':
-    resolution: {integrity: sha512-KSl3eRVRsJY5LznKwg9GilSzMnitag4qlqwDRUu7HfMFdjdf5U1k25MqBH7hGbVQMt1YWvPFjQSuMpqVs5tDAw==}
+  '@atproto/aws@0.2.30':
+    resolution: {integrity: sha512-oB/whUIWwSOEqUazz5meN3/AlovBdRc224uRPNy9aC6+qmNKfHKiMfo0ytFhGYdm4GtEd2HYwIT3KR/Rtc2RRA==}
     engines: {node: '>=18.7.0'}
 
   '@atproto/common-web@0.4.3':
@@ -75,8 +75,8 @@ packages:
   '@atproto/jwk@0.5.0':
     resolution: {integrity: sha512-Qi2NtEqhkG+uz3CKia4+H05WMV/z//dz3ESo5+cyBKrOnxVTJ5ZubMyltWjoYvy6v/jLhorXdDWcjn07yky7MQ==}
 
-  '@atproto/lexicon-resolver@0.2.1':
-    resolution: {integrity: sha512-WsIk3YObhbcI7NZCOHdjcRDvHOrLQLoscm3VfPRTKk9GJi7d9+M9WKrroBE1y5qopqG4Lt5K87Wjz3210NoDzQ==}
+  '@atproto/lexicon-resolver@0.2.2':
+    resolution: {integrity: sha512-m1YS8lK+R9JcH3Q4d01CEv5rhuTeo406iPBhVnNfoBFEVYMI3Acdo2/9e5hBoNhr4W6l4LI8qJxplYJcsWNh5A==}
 
   '@atproto/lexicon@0.5.1':
     resolution: {integrity: sha512-y8AEtYmfgVl4fqFxqXAeGvhesiGkxiy3CWoJIfsFDDdTlZUC8DFnZrYhcqkIop3OlCkkljvpSJi1hbeC1tbi8A==}
@@ -92,8 +92,8 @@ packages:
     resolution: {integrity: sha512-1KNPU2Y0B/Md9MbIue0y5BAtiR7Crq9STcacAIagNRIp16k25B/7pKmbbVUgzpRvojOre1TFawOkLZkeg6kaEw==}
     engines: {node: '>=18.7.0'}
 
-  '@atproto/oauth-provider@0.13.0':
-    resolution: {integrity: sha512-uMlu5QDTDwonHyQEs8CIsygMi4Am6EyjW6rU1MG2vPyanyICrgj7HKoQPtmgvP7fFsf6o6QUeBO3UZYyKQ8oMw==}
+  '@atproto/oauth-provider@0.13.1':
+    resolution: {integrity: sha512-zQKPGcTj64+21ypl+Q5gSOa8J32PQj8ZPdDDAHQDHi87eN/h83mC0NO1P8GOqoi0IhtOz8JufOXK0a/ZfgbugA==}
     engines: {node: '>=18.7.0'}
 
   '@atproto/oauth-scopes@0.2.0':
@@ -102,12 +102,12 @@ packages:
   '@atproto/oauth-types@0.4.1':
     resolution: {integrity: sha512-c5ixf2ZOzcltOu1fDBnO/tok6Wj7JDDK66+Z0q/+bAr8LXgOnxP7zQfJ+DD4gTkB+saTqsqWtVv8qvx/IEtm1g==}
 
-  '@atproto/pds@0.4.181':
-    resolution: {integrity: sha512-oLT+8P3EqQS7FtT0KOFw5k3XlORwXwH5YpT+Dmc3lYzKyUgaJWpO47aqjQhQco3WzQqOMrzY0qsBQXLOBkaWbA==}
+  '@atproto/pds@0.4.182':
+    resolution: {integrity: sha512-M0E7ULh4uH+9QrkTthEIiUWQxmOZhYxl7H/3Hg1YVxin3tIJkh8fY6ydguIUUESjmzdP+3qVcAOf3tOuB6iqXQ==}
     engines: {node: '>=18.7.0'}
 
-  '@atproto/repo@0.8.9':
-    resolution: {integrity: sha512-FTePZS2KEv8++pkOB8GGvm46V6uJqd/95bPA1cXTDXyw0cqeVEOItfxkCH1ky/fY71QYr0NkmqMUwuwZ/gwEtQ==}
+  '@atproto/repo@0.8.10':
+    resolution: {integrity: sha512-REs6TZGyxNaYsjqLf447u+gSdyzhvMkVbxMBiKt1ouEVRkiho1CY32+omn62UkpCuGK2y6SCf6x3sVMctgmX4g==}
     engines: {node: '>=18.7.0'}
 
   '@atproto/syntax@0.4.1':
@@ -1701,7 +1701,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@atproto/api@0.16.10':
+  '@atproto/api@0.16.11':
     dependencies:
       '@atproto/common-web': 0.4.3
       '@atproto/lexicon': 0.5.1
@@ -1712,12 +1712,12 @@ snapshots:
       tlds: 1.255.0
       zod: 3.24.1
 
-  '@atproto/aws@0.2.29':
+  '@atproto/aws@0.2.30':
     dependencies:
       '@atproto/common': 0.4.12
       '@atproto/common-web': 0.4.3
       '@atproto/crypto': 0.4.4
-      '@atproto/repo': 0.8.9
+      '@atproto/repo': 0.8.10
       '@aws-sdk/client-cloudfront': 3.883.0
       '@aws-sdk/client-kms': 3.883.0
       '@aws-sdk/client-s3': 3.884.0
@@ -1785,12 +1785,12 @@ snapshots:
       multiformats: 9.9.0
       zod: 3.24.1
 
-  '@atproto/lexicon-resolver@0.2.1':
+  '@atproto/lexicon-resolver@0.2.2':
     dependencies:
       '@atproto-labs/fetch-node': 0.1.10
       '@atproto/identity': 0.4.9
       '@atproto/lexicon': 0.5.1
-      '@atproto/repo': 0.8.9
+      '@atproto/repo': 0.8.10
       '@atproto/syntax': 0.4.1
       '@atproto/xrpc': 0.7.5
       multiformats: 9.9.0
@@ -1816,7 +1816,7 @@ snapshots:
     optionalDependencies:
       '@atproto/oauth-provider-api': 0.3.0
 
-  '@atproto/oauth-provider@0.13.0':
+  '@atproto/oauth-provider@0.13.1':
     dependencies:
       '@atproto-labs/fetch': 0.2.3
       '@atproto-labs/fetch-node': 0.1.10
@@ -1828,7 +1828,7 @@ snapshots:
       '@atproto/jwk': 0.5.0
       '@atproto/jwk-jose': 0.1.10
       '@atproto/lexicon': 0.5.1
-      '@atproto/lexicon-resolver': 0.2.1
+      '@atproto/lexicon-resolver': 0.2.2
       '@atproto/oauth-provider-api': 0.3.0
       '@atproto/oauth-provider-frontend': 0.2.1
       '@atproto/oauth-provider-ui': 0.3.1
@@ -1860,23 +1860,23 @@ snapshots:
       '@atproto/jwk': 0.5.0
       zod: 3.24.1
 
-  '@atproto/pds@0.4.181':
+  '@atproto/pds@0.4.182':
     dependencies:
       '@atproto-labs/fetch-node': 0.1.10
       '@atproto-labs/simple-store': 0.3.0
       '@atproto-labs/simple-store-memory': 0.1.4
       '@atproto-labs/simple-store-redis': 0.0.1(ioredis@5.4.2)
       '@atproto-labs/xrpc-utils': 0.0.22
-      '@atproto/api': 0.16.10
-      '@atproto/aws': 0.2.29
+      '@atproto/api': 0.16.11
+      '@atproto/aws': 0.2.30
       '@atproto/common': 0.4.12
       '@atproto/crypto': 0.4.4
       '@atproto/identity': 0.4.9
       '@atproto/lexicon': 0.5.1
-      '@atproto/lexicon-resolver': 0.2.1
-      '@atproto/oauth-provider': 0.13.0
+      '@atproto/lexicon-resolver': 0.2.2
+      '@atproto/oauth-provider': 0.13.1
       '@atproto/oauth-scopes': 0.2.0
-      '@atproto/repo': 0.8.9
+      '@atproto/repo': 0.8.10
       '@atproto/syntax': 0.4.1
       '@atproto/xrpc': 0.7.5
       '@atproto/xrpc-server': 0.9.5
@@ -1915,7 +1915,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@atproto/repo@0.8.9':
+  '@atproto/repo@0.8.10':
     dependencies:
       '@atproto/common': 0.4.12
       '@atproto/common-web': 0.4.3
