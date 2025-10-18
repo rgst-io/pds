@@ -25,10 +25,11 @@ for host in ${RELAY_HOSTS//,/ }; do
   curl \
     --fail \
     --show-error \
+    --silent \
     --request POST \
     --header "Content-Type: application/json" \
     --data "{\"hostname\": \"${PDS_HOSTNAME}\"}" \
-    "${host}/xrpc/com.atproto.sync.requestCrawl" >/dev/null
+    "${host}/xrpc/com.atproto.sync.requestCrawl"
 done
 
 echo "done"
