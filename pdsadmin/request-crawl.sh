@@ -24,7 +24,6 @@ for host in ${RELAY_HOSTS//,/ }; do
   fi
   curl \
     --fail \
-    --silent \
     --show-error \
     --request POST \
     --header "Content-Type: application/json" \
