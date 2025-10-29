@@ -15,5 +15,8 @@
       "sharp"
     ]
   },
+  "resolutions": {
+    "better-sqlite3": "12.4.1"
+  },
   "packageManager": "pnpm@10.20.0"
 }
