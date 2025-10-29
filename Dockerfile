@@ -2,6 +2,7 @@ ARG NODE_VERSION=unset
 FROM node:${NODE_VERSION}-alpine3.22 AS build
 WORKDIR /app
 COPY ./service ./
+RUN apk add --no-cache python3 build-base
 RUN npm install -g corepack@latest && corepack enable && corepack install
 RUN pnpm install --production --frozen-lockfile
 
