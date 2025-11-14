@@ -12,8 +12,8 @@ importers:
   .:
     dependencies:
       '@atproto/pds':
-        specifier: 0.4.192
-        version: 0.4.192
+        specifier: 0.4.193
+        version: 0.4.193
 
 packages:
 
@@ -105,8 +105,8 @@ packages:
   '@atproto/oauth-types@0.5.0':
     resolution: {integrity: sha512-33xz7HcXhbl+XRqbIMVu3GE02iK1nKe2oMWENASsfZEYbCz2b9ZOarOFuwi7g4LKqpGowGp0iRKsQHFcq4SDaQ==}
 
-  '@atproto/pds@0.4.192':
-    resolution: {integrity: sha512-LktNGvSgBrXMMChmHQw/cX6cHHDN/RfQ3ekerbt+osPxNG8BQ7HaEFKdV3hpo8d8JZKhEIGXeIVs0Xyuv5xwgQ==}
+  '@atproto/pds@0.4.193':
+    resolution: {integrity: sha512-Ltyf+ipMht0PDdKY7jcbYgPBTz+8Mpmt6mJGZTUYzyUFaDxdqqTeNlGb6cfsMevIh/tzL+JT11Gmtnq1PMtXLQ==}
     engines: {node: '>=18.7.0'}
 
   '@atproto/repo@0.8.10':
@@ -1865,7 +1865,7 @@ snapshots:
       '@atproto/jwk': 0.6.0
       zod: 3.24.1
 
-  '@atproto/pds@0.4.192':
+  '@atproto/pds@0.4.193':
     dependencies:
       '@atproto-labs/fetch-node': 0.2.0
       '@atproto-labs/simple-store': 0.3.0
