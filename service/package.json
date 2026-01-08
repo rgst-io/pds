@@ -6,7 +6,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@atproto/pds": "0.4.202"
+    "@atproto/pds": "0.4.203"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
