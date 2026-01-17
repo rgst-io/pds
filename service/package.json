@@ -16,7 +16,7 @@
     ]
   },
   "resolutions": {
-    "better-sqlite3": "12.5.0"
+    "better-sqlite3": "12.6.2"
   },
   "packageManager": "pnpm@10.27.0"
 }
