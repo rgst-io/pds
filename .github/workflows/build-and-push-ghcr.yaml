@@ -34,7 +34,7 @@ jobs:
         run: echo "version=$(mise current node)" >> $GITHUB_OUTPUT
 
       - name: Set up QEMU
-        uses: docker/setup-qemu-action@v3
+        uses: docker/setup-qemu-action@v4
 
       - name: Setup Docker buildx
         uses: docker/setup-buildx-action@v3
